@@ -1,0 +1,115 @@
+/* Temel stil ayarları */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+/* Sohbet kutusu */
+.messages-box {
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.messages-box p {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #ecf0f1;
+}
+
+.messages-box b {
+  color: #3498db;
+}
+
+/* Mesaj kutusu ve butonlar */
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-field {
+  width: 70%;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #3498db;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Mobil uyumlu tasarım */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .input-field {
+    width: 60%;
+  }
+}
